@@ -2,4 +2,25 @@ GET http://localhost:3000/blogs
 
 ###
 
+POST http://localhost:3000/blogs
+Content-Type: application/json
+
+{
+    "title": "Test Blog Title",
+    "post": "This is my test blog post.  I hope it works"
+}
+
+###
+
 GET http://localhost:3000/images
+
+###
+
+POST http://localhost:3000/images
+Content-Type: application/json
+
+{
+    "title": "This is a beard image",
+    "caption": "Damn this beard is dope",
+    "imageUrl": "https://i.ibb.co/bNqD4BS/March24.jpg"
+}
